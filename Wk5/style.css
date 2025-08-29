@@ -1,0 +1,102 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Header with Flexbox */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #916a00;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #ceb2b2;
+}
+
+/* About Section */
+.about {
+  padding: 2rem 1rem;
+}
+
+/* Services Section with CSS Grid */
+.services .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: #01c4ff;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  color: bBlack;
+  font-style:normal;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+  padding: 2rem 1rem;
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+
+form button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive Design with Media Queries */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+}
